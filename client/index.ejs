@@ -1,0 +1,18 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Finder</title>
+</head>
+<body>
+  Yelp Reviews
+    <ul>
+    <% businesses.forEach(function(business) { %>
+ <li>
+      <%= <a> Name </a> business["name"] %>
+      <%= <a> Rating </a> business["rating"] %>
+      <%= <a> Review Count </a> business["review_count"] %>
+      </li>
+    <% }) %>
+    </ul>
+</body>
+</html>

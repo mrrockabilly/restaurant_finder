@@ -12,6 +12,7 @@
   "dependencies": {
     "chai": "^2.3.0",
     "cheerio": "^0.19.0",
+    "ejs": "^2.5.2",
     "express": "^4.12.4",
     "instagram-node": "^0.5.8",
     "instagram-node-lib": "^0.1.1",

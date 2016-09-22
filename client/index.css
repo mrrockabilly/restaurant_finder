@@ -1,6 +1,13 @@
 h1 {
     color: #2F4F4F;
 }
+
+
+.instagram-log {
+    float: right;
+    margin: 10px;
+ 
+}
 .container {
     margin: 0 auto;
     text-align: center;

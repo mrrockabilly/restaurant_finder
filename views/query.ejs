@@ -5,23 +5,26 @@
   <title>Restaurant Finder</title>
 </head>
 <body>
+
+   <form class="instagram-log" method='GET' action='/auth/instagram'>
+    <input type='submit' value='Login with Instagram'></button>
+   </form>
+
+   <br>
+   <br>
+
 <div class="container">
 
   <h1>Enter a City Name</h1>
-
   <form method='POST' action='/submitQuery'>
     <input name="city" value="New York, New York" type="text" placeholder="city"></input>
     <input name="results" value='food' type="text" placeholder="food"></input>
     <input type='submit' value='Search Yelp'></button>
-  
     <br>
     <br>
-  </form>
-
-  <form method='GET' action='/auth/instagram'>
-    <input type='submit' value='Login'></button>
-  </form>
-  
+  </form>  
   </div>
+
+
 </body>
 </html>

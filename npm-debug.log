@@ -1,35 +1,35 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/Cellar/node/5.10.0/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli [ '/Users/JasonRay/.nvm/versions/node/v6.5.0/bin/node',
+1 verbose cli   '/Users/JasonRay/.nvm/versions/node/v6.5.0/bin/npm',
 1 verbose cli   'start' ]
-2 info using npm@3.8.3
-3 info using node@v5.10.0
+2 info using npm@3.10.3
+3 info using node@v6.5.0
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle unit-9-node-api@1.0.0~prestart: unit-9-node-api@1.0.0
 6 silly lifecycle unit-9-node-api@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle unit-9-node-api@1.0.0~start: unit-9-node-api@1.0.0
 8 verbose lifecycle unit-9-node-api@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle unit-9-node-api@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/JasonRay/codesmith/restaurant_finder/node_modules/.bin:/usr/local/Cellar/node/5.10.0/bin:/Users/JasonRay/.node/bin:/Users/JasonRay/.rvm/gems/ruby-2.2.1/bin:/Users/JasonRay/.rvm/gems/ruby-2.2.1@global/bin:/Users/JasonRay/.rvm/rubies/ruby-2.2.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/ImageMagick/bin:/Users/JasonRay/.npm-packages/bin:/Users/JasonRay/.rvm/bin
+9 verbose lifecycle unit-9-node-api@1.0.0~start: PATH: /Users/JasonRay/.nvm/versions/node/v6.5.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/JasonRay/codesmith/restaurant_finder/node_modules/.bin:/Users/JasonRay/.nvm/versions/node/v6.5.0/bin:/Users/JasonRay/.nvm/versions/node/v6.5.0/bin:/Users/JasonRay/.node/bin:/Users/JasonRay/.rvm/gems/ruby-2.2.1/bin:/Users/JasonRay/.rvm/gems/ruby-2.2.1@global/bin:/Users/JasonRay/.rvm/rubies/ruby-2.2.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/ImageMagick/bin:/usr/local/bin:/Users/JasonRay/.rvm/bin:/Users/JasonRay/.rvm/bin
 10 verbose lifecycle unit-9-node-api@1.0.0~start: CWD: /Users/JasonRay/codesmith/restaurant_finder
 11 silly lifecycle unit-9-node-api@1.0.0~start: Args: [ '-c', 'node server/server.js' ]
 12 silly lifecycle unit-9-node-api@1.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle unit-9-node-api@1.0.0~start: Failed to exec start script
 14 verbose stack Error: unit-9-node-api@1.0.0 start: `node server/server.js`
 14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
-14 verbose stack     at emitTwo (events.js:100:13)
-14 verbose stack     at EventEmitter.emit (events.js:185:7)
-14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-14 verbose stack     at emitTwo (events.js:100:13)
-14 verbose stack     at ChildProcess.emit (events.js:185:7)
-14 verbose stack     at maybeClose (internal/child_process.js:850:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+14 verbose stack     at EventEmitter.<anonymous> (/Users/JasonRay/.nvm/versions/node/v6.5.0/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/JasonRay/.nvm/versions/node/v6.5.0/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid unit-9-node-api@1.0.0
 16 verbose cwd /Users/JasonRay/codesmith/restaurant_finder
 17 error Darwin 15.6.0
-18 error argv "/usr/local/Cellar/node/5.10.0/bin/node" "/usr/local/bin/npm" "start"
-19 error node v5.10.0
-20 error npm  v3.8.3
+18 error argv "/Users/JasonRay/.nvm/versions/node/v6.5.0/bin/node" "/Users/JasonRay/.nvm/versions/node/v6.5.0/bin/npm" "start"
+19 error node v6.5.0
+20 error npm  v3.10.3
 21 error code ELIFECYCLE
 22 error unit-9-node-api@1.0.0 start: `node server/server.js`
 22 error Exit status 1

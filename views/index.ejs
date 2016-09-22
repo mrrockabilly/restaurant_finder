@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Restaurant Finder</title>
+</head>
+<body>
+  <h1>Yelp Reviews</h1>
+  <a href="/">New Search</a>
+    <ul>
+    <% businesses.forEach(function(business) { %>
+ <li>
+     <a><small>Name:</small> &nbsp</a> <%=  business["name"] %>
+        <a>&nbsp<small>Rating:</small> &nbsp</a><%= business["rating"] %>
+      <a>&nbsp<small>Review Count:</small> &nbsp</a><%=  business["review_count"] %>
+      <br>
+      <br>
+      <br>
+      </li>
+    <% }) %>
+    </ul>
+</body>
+</html>

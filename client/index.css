@@ -5,9 +5,13 @@ h1 {
 
 .instagram-log {
     float: right;
-    margin: 10px;
- 
+    margin: 10px; 
 }
+
+.instagram-button {
+    font-size: 20px;
+}
+
 .container {
     margin: 0 auto;
     text-align: center;

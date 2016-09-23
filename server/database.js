@@ -5,7 +5,7 @@ mongoose.connect('mongodb://localhost/users')
 var Schema = mongoose.Schema;
 
 var userSchema = new Schema({
-    userName: String,
+    username: String,
     token: String
 });
 

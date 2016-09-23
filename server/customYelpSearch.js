@@ -1,10 +1,11 @@
 var Yelp = require('yelp');
+const passwords = require('./passwords');
 
 var yelp = new Yelp({
-  consumer_key: 'BkCGfK4qtGp7jn0Ch8c2KQ',
-  consumer_secret: 'KJcinh1geGFPAtIRVUFlXStm974',
-  token: '0AKP7BszvcZ-z-gxCxxl03UNj3I1Tijz',
-  token_secret: 'et5do3f5JtQ3l6i3wYOuhdHuyCo',
+  consumer_key: passwords.yelpConsumer_key,
+  consumer_secret: passwords.yelpConsumer_secret,
+  token: passwords.yelpToken,
+  token_secret: passwords.yelpToken_secret,
 });
 
 

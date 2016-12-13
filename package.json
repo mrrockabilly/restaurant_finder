@@ -25,5 +25,8 @@
     "request": "^2.55.0",
     "supertest": "^1.0.1",
     "yelp": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }

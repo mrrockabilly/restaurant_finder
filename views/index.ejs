@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <title>Restaurant Finder</title>
 </head>
 <body>
@@ -10,14 +11,17 @@
   <a href="/">New Search</a>
     <ul>
     <% businesses.forEach(function(business) { %>
- <li>
-     <a><small>Name:</small> &nbsp</a> <%=  business["name"] %>
-        <a>&nbsp<small>Rating:</small> &nbsp</a><%= business["rating"] %>
-      <a>&nbsp<small>Review Count:</small> &nbsp</a><%=  business["review_count"] %>
-      <br>
-      <br>
-      <br>
-      </li>
+      <div class="media">
+        <a class="media-left" href="#">
+          <img class="media-object" src=<%=  business["snippet_image_url"] %> alt="Generic placeholder image">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading"><%=  business["name"] %></h4>
+          <%=  business["snippet_text"] %>
+          <div>Review Count: <%= business["review_count"] %></div>
+          <div>Rating: <%=  business["rating"] %></div>
+        </div>
+     </div>
     <% }) %>
     </ul>
 </body>

@@ -14,6 +14,7 @@ console.log(req.body);
   yelp.search({ term: req.body.results, location: req.body.city})
   .then(function (data) {
     var businesses = data["businesses"];
+        console.log(businesses);
     res.render('./../views/index', { businesses: businesses });
   })
   .catch(function (err) {

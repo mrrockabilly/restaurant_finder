@@ -9,7 +9,7 @@
 <body>
   <h1>Yelp Reviews</h1>
   <a href="/">New Search</a>
-    <ul>
+  <div class="yelp-results">
     <% businesses.forEach(function(business) { %>
       <div class="media">
         <a class="media-left" href="#">
@@ -18,11 +18,11 @@
         <div class="media-body">
           <h4 class="media-heading"><%=  business["name"] %> <img src=<%=  business["rating_img_url"] %> alt="Stars"></h4>
           <%=  business["snippet_text"] %>
-          <div>Phone Number: <%= business["phone"] %></div>
-          <div>Number of Reviews: <%= business["review_count"] %></div>
+          <div><b>Phone: </b><%= business["phone"] %></div>
+          <div><b>Reviews: </b><%= business["review_count"] %></div>
         </div>
      </div>
     <% }) %>
-    </ul>
+  </div>
 </body>
 </html>

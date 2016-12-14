@@ -3,9 +3,9 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-//const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 const path = require('path');
-//const User = require('./database');
+const User = require('./database');
 const passwords = require('./passwords');
 const yelpController = require('./yelp');
 const customYelpSearch = require('./customYelpSearch');
@@ -14,9 +14,6 @@ const InstagramStrategy = require('passport-instagram').Strategy;
 const Strategy = require('./passport');
 const INSTAGRAM_CLIENT_ID = passwords.instaClientId;
 const INSTAGRAM_CLIENT_SECRET = passwords.instaClientSecret;
-
-
-console.log(passwords.passwordone)
 
 app.use(bodyParser());
 app.use(express.static('client'));

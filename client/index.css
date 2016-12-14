@@ -49,3 +49,13 @@ input {
     font-size: 16px;
     border-radius: 5px;
 }
+
+.yelp-results {
+    padding-left: 20px;
+}
+
+@media only screen and (min-width: 900px) {
+.yelp-results {
+    width: 800px;
+}
+}

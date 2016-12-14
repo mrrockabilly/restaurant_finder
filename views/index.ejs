@@ -13,13 +13,13 @@
     <% businesses.forEach(function(business) { %>
       <div class="media">
         <a class="media-left" href="#">
-          <img class="media-object" src=<%=  business["snippet_image_url"] %> alt="Generic placeholder image">
+          <img class="media-object" src=<%=  business["image_url"] %> alt="Generic placeholder image">
         </a>
         <div class="media-body">
-          <h4 class="media-heading"><%=  business["name"] %></h4>
+          <h4 class="media-heading"><%=  business["name"] %> <img src=<%=  business["rating_img_url"] %> alt="Stars"></h4>
           <%=  business["snippet_text"] %>
-          <div>Review Count: <%= business["review_count"] %></div>
-          <div>Rating: <%=  business["rating"] %></div>
+          <div>Phone Number: <%= business["phone"] %></div>
+          <div>Number of Reviews: <%= business["review_count"] %></div>
         </div>
      </div>
     <% }) %>

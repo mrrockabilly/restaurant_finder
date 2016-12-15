@@ -17,9 +17,10 @@
         </a>
         <div class="media-body">
           <h4 class="media-heading"><%=  business["name"] %> <img src=<%=  business["rating_img_url"] %> alt="Stars"></h4>
-          <%=  business["snippet_text"] %>
-          <div><b>Phone: </b><%= business["phone"] %></div>
-          <div><b>Reviews: </b><%= business["review_count"] %></div>
+          <%=  business["snippet_text"] %> <b>Phone: </b><%= business["phone"] %> <b>Reviews: </b><%= business["review_count"] %>
+          <form method='POST' action='/twitter'>
+            <button type="submit" class="btn btn-default btn-sm" name="business" value="<%=  business["name"] %>">Twitter</button>
+          </form>  
         </div>
      </div>
     <% }) %>

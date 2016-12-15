@@ -8,8 +8,6 @@ const path = require('path');
 //const User = require('./database');
 const passwords = require('./passwords');
 const customYelpSearch = require('./customYelpSearch');
-const INSTAGRAM_CLIENT_ID = passwords.instaClientId;
-const INSTAGRAM_CLIENT_SECRET = passwords.instaClientSecret;
 
 app.use(bodyParser());
 app.use(express.static('client'));
@@ -21,9 +19,9 @@ app.get('/', function(req, res) {
 
 app.post('/submitQuery', customYelpSearch.getCustom);
 
-// app.get('/', yelpController.getData);
-
-// app.get('/yelp', yelpController.getData);
+app.post('/twitter', function(req, res, next){
+   console.log(req.body.business);
+});
 
 app.listen(3000);
 

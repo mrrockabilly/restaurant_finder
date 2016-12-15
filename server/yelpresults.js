@@ -1,15 +1,15 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/YelpCache')
+mongoose.connect('mongodb://localhost/yelpcache')
 
 var Schema = mongoose.Schema;
 
-var YelpCacheSchema = new Schema({
+var yelpCacheSchema = new Schema({
     name: String,
     text: String,
     phone: String
 });
 
-var YelpCache = mongoose.model('YelpCache', YelpCacheSchema);
+var YelpCache = mongoose.model('YelpCache', yelpCacheSchema);
 
-module.exports = User;
+module.exports = YelpCache;

@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Restaurant Finder</title>
+</head>
+<body>
+  <h1 class="error">Tweets!</h1>
+  <div class="yelp-results">
+    <% statuses.forEach(function(status) { %>
+      <div>  <%=  status.text %> </div>
+    <% }) %>
+  </div>
+</body>
+</html>

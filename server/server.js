@@ -8,6 +8,7 @@ const path = require('path');
 //const User = require('./database');
 const passwords = require('./passwords');
 const customYelpSearch = require('./customYelpSearch');
+const twitterSearch = require('./twittersearch')
 
 app.use(bodyParser());
 app.use(express.static('client'));
@@ -19,9 +20,7 @@ app.get('/', function(req, res) {
 
 app.post('/submitQuery', customYelpSearch.getCustom);
 
-app.post('/twitter', function(req, res, next){
-   console.log(req.body.business);
-});
+app.post('/twitter', twitterSearch.getTweets);
 
 app.listen(3000);
 

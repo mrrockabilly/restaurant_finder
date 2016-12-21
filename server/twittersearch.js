@@ -8,6 +8,11 @@ var client = new Twitter({
   access_token_secret: passwords.twitteraccess_token_secret
 });
 
-client.get('search/tweets', {q: 'node.js'}, function(error, tweets, response) {
-   console.log(tweets);
-});
+module.exports.getTweets = function (req, res) {
+  client.get('search/tweets', { q: req.body.business }, function (error, tweets, response) {
+    console.log('TWEEEEETTTTTSSSSSSSSSSSSSS');
+    var statuses = tweets.statuses;
+    res.render('./../views/tweets', {statuses: statuses});
+  });
+
+}

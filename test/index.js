@@ -13,19 +13,28 @@ for (var i = 0; i < routes.length; i++) {
 
 request = request(app);
 
-describe('Restaurant Finder should have an index page', function() {
-  it('should connect to server', function(done) {
+describe('Restaurant Finder should have an index page', function () {
+  it('should connect to server', function (done) {
     request
       .get('/')
       .set('Accept', 'application/json')
       .expect(200, done);
   });
 
-  it('should provide back html', function(done) {
+  it('should provide back html', function (done) {
     request
       .get('/')
       .set('Accept', 'application/json')
       .expect('content-type', /html/)
       .expect(200, done);
   });
+});
+
+
+describe('Twitter API should return at least 5 tweets.', function () {
+
+});
+
+describe('Yelp API should return at least 5 reviews.', function () {
+
 });

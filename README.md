@@ -4,7 +4,7 @@ A web app that aggregates results from from the Twitter and Yelp API. The pages 
 ## Getting Started
 
 ```
-git clone
+git clone https://github.com/mrrockabilly/restaurant_finder.git
 cd restaurant_finder
 npm install
 npm start
